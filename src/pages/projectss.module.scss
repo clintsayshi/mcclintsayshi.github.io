@@ -1,0 +1,139 @@
+/* 
+
+.
+
+*/
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .headerFrom {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .headerText {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+
+    font-size: 30px;
+
+    margin-right: 1.5rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 35px;
+    }
+  }
+
+  .line {
+    height: 2px;
+    width: max-content;
+    flex: 1;
+    background: black;
+  }
+}
+
+.projects {
+  min-height: 80vh;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    min-height: 70vh;
+    margin-bottom: 4rem;
+  }
+  @media screen and (max-width: 600px) {
+    min-height: 80vh;
+    margin-bottom: 4rem;
+  }
+}
+
+.projectsContent {
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 0;
+    //padding: 2rem 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 2rem 0;
+    padding-bottom: 0;
+  }
+}
+
+.project {
+  width: auto;
+  margin-bottom: 1rem;
+  .projectCover {
+    width: 300px;
+    height: 250px;
+    background: gold;
+  }
+
+  .projectName {
+    padding: 0;
+    margin: 0.25rem 0;
+    font-size: 24px;
+  }
+
+  .projectAction {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .projectCover {
+      width: 250px;
+      height: 250px;
+      background: gold;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .projectCover {
+      width: 210px;
+      height: 200px;
+      background: gold;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .projectCover {
+      width: 100%;
+      height: 250px;
+      background: gold;
+    }
+  }
+}
+
+.projectsAction {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    height: 5vh;
+  }
+  @media screen and (max-width: 600px) {
+    justify-content: flex-start;
+  }
+}

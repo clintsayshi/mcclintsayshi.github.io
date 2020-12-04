@@ -1,0 +1,84 @@
+/* 
+
+*/
+
+.nav {
+  //height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  //top: 5vh;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  background: white;
+}
+/* nav logo */
+.navLogo {
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 24px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 22px;
+    margin-left: 0;
+  }
+}
+
+/* toggle button on mobile phones */
+.navToggle {
+  display: none;
+  color: black;
+  padding: 10px;
+  font-size: 22px;
+  //border: 1px dotted blue;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    transition: 0.5s all ease-in-out;
+    margin-right: 0;
+  }
+}
+
+/* nav links */
+.navLinks {
+  display: flex;
+
+  @media screen and (max-width: 600px) {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 0;
+    flex-direction: column;
+    z-index: 15;
+    background: white;
+
+    transform: translate(-100%, 0);
+    transition: 0.5s transform ease-in-out;
+  }
+}
+
+.navLinksToggle {
+  transform: translate(0, 0%);
+  transition: 0.5s transform ease-in-out;
+}
+
+.navLink {
+  margin: 10px 20px;
+  padding: 10px 5px;
+  @media screen and (max-width: 600px) {
+    font-size: 26px;
+
+    * {
+      text-decoration: none;
+    }
+  }
+}
