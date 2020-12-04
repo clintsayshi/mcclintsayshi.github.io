@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import "../components/global.scss"
 import styles from "./projectss.module.scss"

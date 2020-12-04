@@ -7,8 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import { SiTwitter, SiGithub, SiInstagram } from "react-icons/si"
 
 import styles from "./hero.module.scss"
 import "./global.scss"
