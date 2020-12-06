@@ -5,19 +5,23 @@ import styles from "./home.module.scss"
 
 const About = () => {
   return (
-    <section className={`container ${styles.about}`}>
-      <div className={styles.aboutCover}></div>
-      <div className={styles.aboutText}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-          ullam libero doloribus amet, sapiente, veniam non est modi repellendus
-          et voluptatibus quam autem quod reiciendis?
+    <section id="about" className={`container ${styles.about}`}>
+      <div className="sectionHeader">
+        <h3 className="headerText">
+          About <span className="blackText">me</span>
+        </h3>
+      </div>
+      <div className={styles.skillsContent}>
+        <p className={styles.pText}>I design and code websites.</p>
+
+        <p className={styles.pText}>
+          I am currently job seeking and open for freelance work.
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-          ullam libero doloribus amet, sapiente, veniam non est modi repellendus
-          et voluptatibus quam autem quod reiciendis?
+        <p className={styles.pText}>
+          If I am not working on my design and coding skills I am probably on
+          twitter talking to strangers about music, movies, or actually watching
+          movies/series.
         </p>
       </div>
     </section>

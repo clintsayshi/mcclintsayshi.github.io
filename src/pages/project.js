@@ -7,11 +7,10 @@ import Layout from "../components/layout"
 const Project = () => {
   return (
     <Layout>
-      <main className={`container ${styles.projects}`}>
+      <main className={`navContainer ${styles.projects}`}>
         <div className={styles.pageHeader}>
           <h5 className={styles.headerFrom}>Projects&nbsp;/&nbsp;</h5>
           <h3 className={styles.headerText}>My Project Name Goes Here</h3>
-          <div className={styles.line}></div>
         </div>
 
         <div className={styles.projectsAction}>

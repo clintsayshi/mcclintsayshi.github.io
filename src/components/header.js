@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header>
-      <nav className={`${styles.nav} container`}>
+      <nav className={`${styles.nav} navContainer`}>
         <Link to="/" className={styles.navLogo}>
           <span className="blackText">C</span>linton
           <br />
@@ -36,6 +36,15 @@ const Header = ({ siteTitle }) => {
               : styles.navLinks
           }
         >
+          {/*  <div
+            role="button"
+            tabIndex={0}
+            onKeyDown={() => setToggle(!toggle)}
+            onClick={() => setToggle(!toggle)}
+            className={styles.navLink}
+          >
+            <Link to="/#about">About</Link>
+          </div> */}
           <div
             role="button"
             tabIndex={0}
@@ -43,17 +52,8 @@ const Header = ({ siteTitle }) => {
             onClick={() => setToggle(!toggle)}
             className={styles.navLink}
           >
-            <Link to="/#about">About me</Link>
-          </div>
-          <div
-            role="button"
-            tabIndex={0}
-            onKeyDown={() => setToggle(!toggle)}
-            onClick={() => setToggle(!toggle)}
-            className={styles.navLink}
-          >
-            <Link role="presentation" to="/#skills">
-              Skills
+            <Link role="presentation" to="/">
+              Home
             </Link>
           </div>
           <div
@@ -74,8 +74,8 @@ const Header = ({ siteTitle }) => {
             onClick={() => setToggle(!toggle)}
             className={styles.navLink}
           >
-            <Link role="presentation" to="/">
-              Blog
+            <Link role="presentation" to="/#contact">
+              Say Hello
             </Link>
           </div>
         </div>

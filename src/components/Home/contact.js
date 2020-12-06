@@ -15,19 +15,18 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state
     return (
-      <section className={`container ${styles.contact}`}>
+      <section id="contact" className={`container ${styles.contact}`}>
         <div className="sectionHeader">
           <h3 className="headerText">
-            Get in <span className="blackText">t</span>ouch
+            Say <span className="blackText">Hello</span>
           </h3>
-          <div className="line"></div>
         </div>
         <div className={styles.contactContent}>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex ducimus
-            delectus accusamus exercitationem quo, porro, vero magnam rerum
-            debitis corporis maiores! Eum laborum exercitationem tempora.
+            Interested in working on a project together? or hiring me to be part
+            of your team? drop a message below
           </p>
+
           <form
             className={`container ${styles.contactFields}`}
             onSubmit={this.submitForm}

@@ -22,7 +22,7 @@ a {
 }
 
 h3 {
-  font-weight: 350 !important;
+  font-weight: 400 !important;
 }
 
 body {
@@ -33,16 +33,31 @@ header {
   height: 10vh;
 }
 
-.container {
+.navContainer {
   width: 75vw;
   margin: auto;
-  //border: 1px dotted blue;
-
   @media screen and (max-width: 1024px) {
     width: 80vw;
   }
   @media screen and (max-width: 768px) {
-    width: 90vw;
+    width: 85vw;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+.container {
+  width: 60vw;
+  margin: auto;
+  //border: 1px dotted blue;
+
+  @media screen and (max-width: 1024px) {
+    width: 75vw;
+  }
+  @media screen and (max-width: 768px) {
+    width: 80vw;
   }
   @media screen and (max-width: 600px) {
     width: 100vw;
@@ -59,16 +74,16 @@ header {
 }
 
 .sectionHeader {
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
 
   .headerText {
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
 
-    font-size: 30px;
+    font-size: 25px;
+    //text-transform: uppercase;
 
     &:nth-child(even) {
       margin-left: 1rem;
@@ -78,7 +93,7 @@ header {
     }
 
     @media screen and (max-width: 600px) {
-      font-size: 35px;
+      font-size: 25px;
     }
   }
 

@@ -1,30 +1,35 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import "../global.scss"
 import styles from "./home.module.scss"
 
 const Skills = () => {
   return (
-    <section className={`container ${styles.skills}`}>
+    <section id="skills" className={`container ${styles.skills}`}>
       <div className="sectionHeader">
         <h3 className="headerText">
-          My <span className="blackText">s</span>kills
+          My <span className="blackText">skills</span>
         </h3>
-        <div className="line"></div>
       </div>
       <div className={styles.skillsContent}>
-        <div className={styles.mainSkills}>
-          <p>Web Design</p>
-          <p>Responsive Web Design</p>
-          <p>User Interface Design</p>
-        </div>
-        <div className={styles.specificSkills}>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>Javascript</p>
-          <p>Reactjs</p>
-          <p>Gatsby</p>
-        </div>
+        <p className={styles.pText}>
+          The main area of my expertise is front end development (client side of
+          the web).
+        </p>
+
+        <p className={styles.pText}>
+          <span className="blackText">
+            HTML, CSS, JavaScript(ReactJS, Gatsby)
+          </span>
+          , building websites and small medium apps with React, Gatsby etc.
+        </p>
+
+        <p className={styles.pText}>
+          Visit my <a href="https://linkedin/in/mcclintsayshi">LinkedIn</a> for
+          information on my previous work or{" "}
+          <Link to="/#contact">contact me</Link>.
+        </p>
       </div>
     </section>
   )

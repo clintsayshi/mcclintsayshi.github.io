@@ -13,25 +13,21 @@ import "./global.scss"
 
 const Hero = () => {
   return (
-    <>
-      <div className={styles.hero}>
-        <div className={`container ${styles.innerHero}`}>
-          <h2 className={styles.heroText}>
-            I am a<br />
-            <span className="blackText">f</span>
-            rontend&nbsp;
-            <span className="blackText">d</span>eveloper
-            <br />
-            I&nbsp;
-            <span className="blackText">d</span>esign &amp;&nbsp;
-            <span className="blackText">c</span>ode&nbsp;
-            <br />
-            <span className="blackText">w</span>ebsites and&nbsp;
-            <span className="blackText">a</span>pps
-          </h2>
+    <div className={styles.hero}>
+      <div className={`${styles.container}`}>
+        <div className={`container ${styles.heroCaption}`}>
+          <p className={styles.heroP}>
+            Hello, My Name Is Clinton. A Front End Web Developer Living In
+            Tembisa, GP
+          </p>
+        </div>
+        <div className={styles.heroCover}>
+          <div className={styles.heroCoverImg}></div>
+          <div className={styles.heroCoverImg}></div>
+          <div className={styles.heroCoverImg}></div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

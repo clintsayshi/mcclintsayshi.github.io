@@ -3,12 +3,9 @@
 */
 
 .nav {
-  //height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  //top: 5vh;
   left: 0;
   right: 0;
   z-index: 15;
@@ -17,18 +14,18 @@
 /* nav logo */
 .navLogo {
   margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
   padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
   font-weight: 400;
-  font-size: 24px;
+  line-height: 15px;
+  font-size: 20px;
 
   @media screen and (max-width: 600px) {
     font-size: 22px;
-    margin-left: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
   }
 }
 
@@ -73,12 +70,20 @@
 
 .navLink {
   margin: 10px 20px;
-  padding: 10px 5px;
+  padding: 8px 5px;
+  * {
+    color: grey;
+
+    &:hover {
+      color: black;
+    }
+  }
   @media screen and (max-width: 600px) {
     font-size: 26px;
 
     * {
       text-decoration: none;
+      color: black;
     }
   }
 }

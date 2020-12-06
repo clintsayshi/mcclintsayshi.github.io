@@ -7,12 +7,11 @@
 .pageHeader {
   display: flex;
   align-items: center;
-  justify-content: center;
 
   .headerFrom {
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
+
     font-size: 16px;
     font-weight: 500;
   }
@@ -20,14 +19,13 @@
   .headerText {
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
 
-    font-size: 30px;
+    font-size: 22px;
 
     margin-right: 1.5rem;
 
     @media screen and (max-width: 600px) {
-      font-size: 35px;
+      font-size: 20px;
     }
   }
 
@@ -37,10 +35,15 @@
     flex: 1;
     background: black;
   }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: initial;
+  }
 }
 
 .projects {
   min-height: 80vh;
+  margin: 0;
   margin-top: 2rem;
 
   @media screen and (max-width: 1024px) {
@@ -54,49 +57,48 @@
 }
 
 .projectsContent {
+  margin: 0;
   padding: 4rem 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   @media screen and (max-width: 1024px) {
     padding-bottom: 0;
-    //padding: 2rem 0;
   }
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
     padding: 2rem 0;
+    margin: auto;
     padding-bottom: 0;
   }
 }
 
 .project {
-  width: auto;
+  width: 500px;
   margin-bottom: 1rem;
+  flex: 1;
+
   .projectCover {
-    width: 300px;
-    height: 250px;
+    width: inherit;
+    height: 150px;
     background: gold;
   }
 
   .projectName {
     padding: 0;
     margin: 0.25rem 0;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .projectAction {
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 1024px) {
     margin-bottom: 1rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
 
     .projectCover {
       width: 250px;
@@ -106,18 +108,19 @@
   }
   @media screen and (max-width: 768px) {
     .projectCover {
-      width: 210px;
+      width: inherit;
       height: 200px;
       background: gold;
     }
   }
   @media screen and (max-width: 600px) {
+    width: inherit;
     &:last-child {
       margin-bottom: 0;
     }
 
     .projectCover {
-      width: 100%;
+      width: inherit;
       height: 250px;
       background: gold;
     }
