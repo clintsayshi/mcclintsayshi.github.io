@@ -43,7 +43,7 @@ header {
     width: 85vw;
   }
   @media screen and (max-width: 600px) {
-    width: 100%;
+    width: 100vw;
     padding: 0 1.5rem;
   }
 }
@@ -51,7 +51,6 @@ header {
 .container {
   width: 60vw;
   margin: auto;
-  //border: 1px dotted blue;
 
   @media screen and (max-width: 1024px) {
     width: 75vw;
@@ -60,7 +59,7 @@ header {
     width: 80vw;
   }
   @media screen and (max-width: 600px) {
-    width: 100vw;
+    width: inherit;
     padding: 0 1.5rem;
   }
 }

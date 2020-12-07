@@ -39,6 +39,10 @@
   font-weight: 500;
   line-height: 40px;
   font-size: 30px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 25px;
+  }
 }
 
 .heroCover {

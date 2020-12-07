@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 
     .footerText {
       display: none;
@@ -86,7 +87,7 @@
   }
   @media screen and (max-width: 600px) {
     margin: 0 1.25rem;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
