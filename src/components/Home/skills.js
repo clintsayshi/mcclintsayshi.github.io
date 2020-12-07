@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import "../global.scss"
 import styles from "./home.module.scss"
+//FILES
+import resume from "../../images/Dikgang_Clinton Manakane_Resume_07-12-2020.pdf"
 
 const Skills = () => {
   return (
@@ -30,6 +32,10 @@ const Skills = () => {
           information on my previous work or{" "}
           <Link to="/#contact">contact me</Link>.
         </p>
+
+        <a target="_blank" className="btn" href={resume} download>
+          My Resume (672kb)
+        </a>
       </div>
     </section>
   )

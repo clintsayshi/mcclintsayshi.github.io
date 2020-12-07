@@ -1,11 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import "../components/global.scss"
 import styles from "./projectss.module.scss"
 import Layout from "../components/layout"
 
-const Projectss = () => {
+const Projectss = ({ data }) => {
   return (
     <Layout>
       <div className={`navContainer ${styles.projects}`}>
@@ -17,7 +18,11 @@ const Projectss = () => {
         </div>
         <div className={`${styles.projectsContent}`}>
           <div className={styles.project}>
-            <div className={styles.projectCover}></div>
+            <Img
+              className={styles.projectCover}
+              fluid={data.file.childImageSharp.fluid}
+            />
+
             <h4 className={styles.projectName}>Project Name Here</h4>
             <Link to="/" className={styles.projectAction}>
               View Project
@@ -30,3 +35,17 @@ const Projectss = () => {
 }
 
 export default Projectss
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "laptop.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
