@@ -33,7 +33,7 @@ const Skills = () => {
           <Link to="/#contact">contact me</Link>.
         </p>
 
-        <a target="_blank" className="btn" href={resume} download>
+        <a target="_blank" role="button" className="btn" href={resume} download>
           My Resume (672kb)
         </a>
       </div>
